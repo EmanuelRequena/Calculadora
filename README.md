@@ -15,7 +15,6 @@ CÓMO EJECUTARLA
 2. Haz doble clic en index.html para abrirlo en el navegador.
 
 (Opcional: con VS Code, usa la extensión Live Server
-o ejecuta "python -m http.server 8000" en la carpeta
 y abre http://localhost:8000)
 
 CÓMO SE USA
