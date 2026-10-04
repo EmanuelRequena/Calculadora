@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.calculadora {
+  width: 320px;
+  background: #1c1c1e;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.pantalla {
+  background: #2c2c2e;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.operacion {
+  color: #8e8e93;
+  font-size: 16px;
+  min-height: 22px;
+  word-break: break-all;
+}
+
+.resultado {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  word-break: break-all;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  height: 62px;
+  border: none;
+  border-radius: 16px;
+  font-size: 22px;
+  color: #fff;
+  background: #3a3a3c;
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn.accion {
+  background: #636366;
+}
+
+.btn.operador {
+  background: #ff9f0a;
+  font-size: 26px;
+}
+
+.btn.operador.activo {
+  background: #fff;
+  color: #ff9f0a;
+}
+
+.btn.igual {
+  background: #30d158;
+}
+
+.btn.cero {
+  grid-column: span 2;
+}
